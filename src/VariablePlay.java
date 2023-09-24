@@ -8,11 +8,15 @@ public class VariablePlay {
     static double iAmDouble = Math.PI;
     static float iAmFloat = 2.5f;
 
-   static boolean iAmBoolean=true;
+   static boolean iAmBoolean;
+   static {iAmBoolean = false;
+    }
 
-    /* part 2 changing a value */
     public static void main(String []args){
-    boolean iAmBoolean = false;
+     iAmBoolean = true;
+
+
+     ;
         System.out.println(iAmBoolean);
         System.out.println(VariablePlay.iAmBoolean);
 
